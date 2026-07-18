@@ -1797,6 +1797,8 @@ _MODEL_PORT_COUNT: Dict[str, int] = {
     'TL-SG108E':   8,
     'TL-SG108PE':  8,   # PoE variant — unverified
     'TL-SG116E':  16,   # unverified
+    'TL-SG605E':   5,
+    'TL-SG608E':   8,
     # DE-series (IP-based sessions)
     'TL-SG1008DE': 8,   # unverified
     'TL-SG1016DE': 16,
@@ -1829,6 +1831,8 @@ _SWITCH_REGISTRY: List[Tuple[str, Type[Switch]]] = [
     ('TL-SG108E',   Switch),     # 8-port  — verified
     ('TL-SG108PE',  Switch),     # 8-port PoE — unverified
     ('TL-SG116E',   Switch),     # 16-port — unverified
+    ('TL-SG605E',   Switch),     # 5-port  — verified
+    ('TL-SG608E',   Switch),     # 8-port  — verified
     # --- DE-series (IP-based sessions, SwitchDE protocol) ---
     ('TL-SG1008DE', SwitchDE),   # 8-port  — unverified
     ('TL-SG1016DE', SwitchDE),   # 16-port — verified

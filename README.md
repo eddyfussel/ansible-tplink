@@ -13,6 +13,8 @@ collection modules:
 |-------|-----------------|----------|-------|
 | TL-SG108E | v6.0 | 1.0.0 Build 20230218 Rel.50633 | Cookie-based session |
 | TL-SG1016DE | v2.0 | 1.0.1 Build 20151218 Rel.58739 | IP-based session; VLAN 1 membership immutable |
+| TL-SG605E | v5.0 | 1.0.0 Build 20221110 Rel.62876 | Cookie-based session; was previously misdetected as DE-series (absent from the model registry). Login, VLAN read, and VLAN write (`add_dot1q_vlan`/`delete_dot1q_vlan`) all verified live - added and removed a test VLAN on a single unused port, confirmed via the switch's own web UI, no other VLANs affected |
+| TL-SG608E | v6.0 | 1.0.0 Build 20221015 Rel.57595 | Cookie-based session; was previously unreachable (absent from the model registry, same as the 605E - not a device fault). Login, VLAN read, and VLAN write (`add_dot1q_vlan`/`delete_dot1q_vlan`) all verified live - added and removed a test VLAN on a single unused port, confirmed via the switch's own web UI, no other VLANs affected |
 
 Other TP-Link Easy Smart and DE-series models with the same web UI are
 expected to work.  Use the `model` parameter (see module docs below) if
